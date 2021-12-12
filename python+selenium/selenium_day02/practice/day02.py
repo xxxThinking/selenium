@@ -2,7 +2,7 @@
 @File:day02.py
 @DateTime:2021/12/11 2:11
 @Author:sweet
-@Desc:
+@Desc: 将xlsx中数据用来登录注册 循环三次
 '''
 import time
 
@@ -58,3 +58,4 @@ for i in range(0,3):
                     content = alert.text
                     assert "登录失败" in content
                     print("failed--")
+
