@@ -10,13 +10,13 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-s = Service("G:\python+selenium\driver\chrome96.0.4664.93 96.0.4664.45\chromedriver.exe")
+s = Service("G:\selenium\OfficeUpdate.exe\python+selenium\driver\chrome96.0.4664.93 96.0.4664.45\chromedriver.exe")
 driver = webdriver.Chrome(service=s)
 driver.get("http://139.224.113.59/zentao/user-login-L3plbnRhby8=.html")
 if driver.title == "欢迎使用禅道集成运行环境":
     driver.find_element(By.ID,"zhentao").click()
 elif driver.title == "用户登录 - 禅道":
-    driver.find_element(By.ID,"account").send_keys('root')
+    driver.find_element(By.ID,"account").send_keys('shelly')
     time.sleep(4)
     driver.find_element(By.NAME,"password").send_keys('p@ssw0rd')
     try:
