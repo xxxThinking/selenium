@@ -29,10 +29,10 @@ driver.find_element(By.ID, "submit").click()
 driver.find_element(By.LINK_TEXT,"组织").click()
 driver.find_element(By.LINK_TEXT,"添加用户").click()
 
-driver.find_element(By.ID, "account").send_keys("shelly13")
+driver.find_element(By.ID, "account").send_keys("shelly50")
 driver.find_element(By.NAME, "password1").send_keys("p@ssw0rd")
 driver.find_element(By.NAME, "password2").send_keys("p@ssw0rd")
-driver.find_element(By.ID, "realname").send_keys("shelly13")
+driver.find_element(By.ID, "realname").send_keys("shelly50")
 # 下拉框
 select_element = driver.find_element(By.ID,"role")
 Select(select_element).select_by_visible_text("测试主管")
@@ -50,7 +50,7 @@ driver.find_element(By.ID,"submit").click()
 
 driver.find_element(By.LINK_TEXT,"用户").click()
 driver.find_element(By.ID,"bysearchTab").click()
-driver.find_element(By.ID,"value1").send_keys("shelly13")
+driver.find_element(By.ID,"value1").send_keys("shelly50")
 driver.find_element(By.ID,"submit").click()
 
 time.sleep(1)

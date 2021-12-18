@@ -18,7 +18,7 @@ if driver.title == "欢迎使用禅道集成运行环境":
 elif driver.title == "用户登录 - 禅道":
     driver.find_element(By.ID,"account").send_keys('shelly')
     time.sleep(4)
-    driver.find_element(By.NAME,"password").send_keys('p@ssw0rd')
+    driver.find_element(By.NAME,"password").send_keys('p@ssw0rd11')
     try:
         driver.find_element(By.ID,"submit").click()
         time.sleep(4)
